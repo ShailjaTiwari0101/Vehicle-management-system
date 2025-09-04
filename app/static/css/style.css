@@ -1,0 +1,228 @@
+/* ===== General Page Styling ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F9FAFB; 
+    color: #333;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background-color: #7C3AED; 
+    padding: 15px 0;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.welcome {
+    margin-right: 15px;
+}
+
+/* ===== Buttons ===== */
+.btn-login,
+.btn-logout,
+.btn-primary,
+.btn-edit,
+.btn-delete,
+.btn-cancel {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-login,
+.btn-logout {
+    background: #7C3AED;  /* new background color */
+    color: #fff;           /* text color white */
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-login:hover,
+.btn-logout:hover {
+    background: #5B21B6;  /* hover darker shade */
+    color: #fff;
+}
+
+.btn-primary { 
+    background: #129be5; 
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #129be5;
+}
+
+.btn-edit {
+    background: #f2b009; 
+    color: #fff;
+}
+
+.btn-edit:hover {
+    background: #F59E0B;
+}
+
+.btn-delete {
+    background: #EF4444; 
+    color: #fff;
+}
+
+.btn-delete:hover {
+    background: #B91C1C;
+}
+
+.btn-cancel {
+    background: #C4B5FD; 
+    color: #fff;
+}
+
+.btn-cancel:hover {
+    background: #7C3AED;
+}
+
+/* ===== Main Content Box ===== */
+.content-box {
+    background: #fff;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    width: 90%;
+}
+
+/* ===== Login Page ===== */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.login-card {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    width: 320px;
+    text-align: center;
+}
+
+.login-card form input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.login-card form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+/* ===== Form Page ===== */
+.form-container {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    width: 500px;
+    margin: 30px auto;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #7C3AED;
+    text-align: center;
+}
+
+.form-container .form-fields input,
+.form-container .form-fields select,
+.form-container .form-fields textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Buttons side-by-side */
+.form-container .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.form-container .form-actions .btn-primary,
+.form-container .form-actions .btn-cancel {
+    width: 48%;
+}
+
+/* ===== Vehicle List Table ===== */
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-size: 16px;
+    width: 95%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    background-color: #fff;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.styled-table th {
+    background-color: #DDD6FE; 
+    color: #4B0082;
+     text-align: left; 
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #F3F4F6;
+}
+
+.styled-table tr:hover {
+    background-color: #EDE9FE;
+}
+
+/* Page Header */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px auto;
+    width: 90%;
+}
+
+.page-header h2 {
+    color: #7C3AED;
+}
+
+.page-header a {
+    text-decoration: none;
+}

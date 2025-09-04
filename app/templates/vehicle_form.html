@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="form-container">
+  <h2>{% if form.instance.pk %}✏️ Edit Vehicle{% else %}➕ Add Vehicle{% endif %}</h2>
+  <form method="post">
+    {% csrf_token %}
+    <div class="form-fields">
+      <label>Vehicle Number</label>
+      {{ form.vehicle_number }}
+      
+      <label>Vehicle Type</label>
+      {{ form.vehicle_type }}
+      
+      <label>Vehicle Model</label>
+      {{ form.vehicle_model }}
+      
+      <label>Vehicle Description</label>
+      {{ form.vehicle_description }}
+    </div>
+    <button type="submit" class="btn-primary">{% if form.instance.pk %}Update{% else %}Add{% endif %}</button>
+    <a href="{% url 'vehicle_list' %}" class="btn-cancel">Cancel</a>
+  </form>
+</div>
+{% endblock %}
